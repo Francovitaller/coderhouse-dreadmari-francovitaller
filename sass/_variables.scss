@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Colores varios
+$color-principal: #f1c40f;
+$color-fondo: linear-gradient(180deg, #07120a 0%, #071a14 100%);
+$color-blanco: #ffffff;
+$color-negro: #000000;
+$color-acento: linear-gradient(240deg, #f1c40f, #2ecc71);
+
+// las tipografias
+$fuente-principal: "Raleway", sans-serif;
+
+// medidas
+$ancho-logo: 150px;
+$radio-borde: 12px;
+$fuente-base: 1rem;
+$fuente-small: 0.875rem;
+$fuente-h1: 3rem;
+$fuente-h2: 2.5rem;
+$fuente-h3: 2rem;
+
+
+//resets
+
+body{
+    background-color: #000000;
+}
+
+* {
+    font-family: $fuente-principal;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+// Extends y Mixins
+
+@mixin flex ($direccion, $justify, $aling, $wrap){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: $wrap;
+}

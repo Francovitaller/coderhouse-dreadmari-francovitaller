@@ -1,0 +1,142 @@
+@use "variables" as v;
+
+.banda {
+    background-color: black;
+    padding: 80px 25px;
+
+    .grid-banda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 0px 200px;
+        gap: 35px;
+
+        h3 {
+            font-size: v.$fuente-h1;
+            font-weight: 700;
+            color: v.$color-principal;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .lead-banda {
+            font-size: 1.15em;
+            font-weight: 400;
+            color: v.$color-blanco;
+            line-height: 1.55;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+//section integrantes
+
+.integrantes-section {
+    padding: 80px 25px;
+    background-color: #0c0c0c;
+
+    .titulo-integrantes {
+        text-align: center;
+        font-size: 3.5rem;
+        color: v.$color-principal;
+        width: 100%;
+        font-weight: 800;
+        margin-bottom: 50px;
+        letter-spacing: 3px;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+        .lead-banda {
+            text-align: center;
+            padding: 0px 200px 60px 200px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.15em;
+            font-weight: 400;
+            color: v.$color-blanco;
+            line-height: 1.55;
+            margin-bottom: 15px;
+        }
+    .integrantes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+    }
+
+    .card-integrante {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 26px;
+        text-align: center;
+        border-radius: v.$radio-borde;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+        transition: transform .3s ease, box-shadow .3s ease;
+
+        &:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .integrante-img {
+            width: 100%;
+            margin-bottom: 18px;
+            border-radius: v.$radio-borde;
+
+            transition: transform .4s ease, filter .3s ease;
+
+            &:hover {
+                transform: scale(1);
+            }
+        }
+
+        h4 {
+            font-size: 1.4em;
+            color: v.$color-principal;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-weight: 700;
+
+        }
+
+        p {
+            color: v.$color-blanco;
+            font-size: v.$fuente-principal;
+            opacity: 0.9;
+        }
+    }
+}
+
+
+//responsive
+
+@media (max-width: 992px) {
+    .banda .grid-banda {
+        flex-direction: column;
+        text-align: center;
+
+        .img-banda {
+            max-width: 70%;
+        }
+    }
+
+    .titulo-integrantes {
+        font-size: 2.8rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .banda,
+    .integrantes-section {
+        padding: 45px 15px;
+    }
+
+    .titulo-integrantes {
+        font-size: 2.4rem !important;
+    }
+}

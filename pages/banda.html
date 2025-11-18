@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preentrega-vitaller1-Banda</title>
+    <title>Banda</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../img/iconos/Isologo-DMI.png" type="image/x-icon">
 </head>
 
 <!-- cuerpo de mi sitio web -->
+
 <body>
 
 
     <!-- cabecera principal -->
 
-<header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="../index.html"><img src="../img/iconos/Isologo-DMI-negro.png" alt="Isologo-DMI" class="logo-principal"></a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link"  href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./banda.html">Banda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./albumes.html">Albumes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./shows.html">Shows</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html"><img src="../img/iconos/Isologo-DMI.png" alt="Dread Mar I" class="logo"></a>
+            <nav class="main-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="./banda.html" class="active">Banda</a>
+                <a href="./albumes.html">Álbumes</a>
+                <a href="./shows.html">Shows</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
         </div>
-    </nav>
-</header>
+    </header>
 
 
     <main>
-        
+
         <!-- primer section de la pagina -->
 
-        <section class="primer-section">
-            <img src="../img/DreadMarI-GuerrerosDelRey.jpg" alt="banda" class="imagen-banda">
-                    <h1>
-                Bienvenido a Banda
-                    </h1>
-                    <p class="primer-parrafo">
-                    Festejamos en este 20° aniversario el trayecto del músico Dread Mar I, que hizo del reggae una declaración del amor, el combate y la esperanza para una completa generación. Desde su primer ritmo hasta llenar los estadios, su voz se hizo el himno para muchos corazones que en su música encontraron refugio y verdadero. Veinte años de ritmos que curan, que juntan y que aún continúan iluminar caminos con la misma llama del primer día. ¡Muchas gracias, el músico Dread Mar I, por tanto reggae del alma!
+
+        <section class="banda">
+            <div class="grid-banda">
+
+                <div>
+                    <h3>La Banda</h3>
+                    <p class="lead-banda">
+                        La banda que acompaña a Dread Mar I está formada por músicos argentinos con amplia trayectoria
+                        en el reggae, cada uno con un recorrido sólido dentro de la escena nacional e internacional. Su
+                        experiencia y sensibilidad musical aportan el sonido característico que complementa a la
+                        perfección la voz cálida y emocional de Mariano, generando una identidad única tanto en vivo
+                        como en estudio.
+
+                        El trabajo conjunto entre estos músicos no solo enriquece el sonido de la banda, sino que
+                        también refuerza el mensaje espiritual y emocional que transmite el proyecto. Juntos logran una
+                        propuesta sólida, auténtica y cargada de energía, que ha resonado con miles de personas en
+                        Argentina y en toda América Latina.
                     </p>
-                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="integrantes-section">
+    <h3 class="titulo-integrantes">Integrantes</h3>
+                    <p class="lead-banda">
+                        Guitarras rítmicas y melódicas potentes.
+                        Bajo firme con groove característico del reggae roots.
+                        Teclados con atmósferas profundas.
+                        Batería con beats suaves y precisos.
+                        Coristas que suman armonía y calidez espiritual.
+                    </p>
+    <div class="integrantes-grid">
+
+        <div class="card-integrante">
+            <img src="../img/negro-ale-guitarrista.png" alt="Guitarrista" class="integrante-img">
+            <h4>Guitarrista</h4>
+            <p>Alejandro Ramos “Negro”</p>
+        </div>
+
+        <div class="card-integrante">
+            <img src="../img/bibliografia-dread2.png" alt="mariano-castro" class="integrante-img">
+            <h4>Voz y composición</h4>
+            <p>Mariano Castro</p>
+        </div>
+
+        <div class="card-integrante">
+            <img src="../img/baterista-tat.png" alt="Baterista" class="integrante-img">
+            <h4>Baterista</h4>
+            <p>Walter "Tate" Aguirre</p>
+        </div>
+
+        <div class="card-integrante">
+            <img src="../img/Trompetista-dread.png" alt="Trompetista" class="integrante-img">
+            <h4>Trompeta</h4>
+            <p>Lucas Colamusi</p>
+        </div>
+
+        <div class="card-integrante">
+            <img src="../img/bajista-dread.png" alt="bajista" class="integrante-img">
+            <h4>Bajista</h4>
+            <p>Diego Gonzalez</p>
+        </div>
+
+        <div class="card-integrante">
+            <img src="../img/Tecladista-dread.png" alt="Teclado" class="integrante-img">
+            <h4>Teclado</h4>
+            <p>Mariano Zapata</p>
+        </div>
+
+    </div>
+</section>
+
 
     </main>
-    
+
     <!-- footer de mi sitio -->
-    
+
     <footer>
         <a href="../index.html"><img src="../img/iconos/Isologo-DMI.png" alt="logo-principal" class="logo-footer"></a>
 
@@ -80,20 +122,30 @@
         <!-- Redes footer de mi sitio -->
 
         <ul class="redes-sociales-footer">
-            <li><a href="https://www.instagram.com/dreadmari/?hl=es" target="_blank"><img src="../img/iconos/instagram.png" alt="instagram-dmi"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCXc3ye1CUoy2roNeZZB_rNA" target="_blank"><img src="../img/iconos/youtube-logo.png" alt="youtube-dmi"></a></li>
-            <li><a href="https://www.facebook.com/dreadmari/" target="_blank"><img src="../img/iconos/facebook.png" alt="facebook-dmi"></a></li>
-            <li><a href="https://open.spotify.com/intl-es/artist/1aw0Cdl1DIrtUrUA6fGbAR?si=TMuniuK_RMWPt_kCNL5ULA" target="_blank"><img src="../img/iconos/spotify-icon.png" alt="spotify-icon"></a></li>
+            <li><a href="https://www.instagram.com/dreadmari/?hl=es" target="_blank"><img
+                        src="../img/iconos/instagram.png" alt="instagram-dmi"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCXc3ye1CUoy2roNeZZB_rNA" target="_blank"><img
+                        src="../img/iconos/youtube-logo.png" alt="youtube-dmi"></a></li>
+            <li><a href="https://www.facebook.com/dreadmari/" target="_blank"><img src="../img/iconos/facebook.png"
+                        alt="facebook-dmi"></a></li>
+            <li><a href="https://open.spotify.com/intl-es/artist/1aw0Cdl1DIrtUrUA6fGbAR?si=TMuniuK_RMWPt_kCNL5ULA"
+                    target="_blank"><img src="../img/iconos/spotify-icon.png" alt="spotify-icon"></a></li>
         </ul>
 
-        <a href="https://www.coderhouse.com/ar/?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gad_source=1&gad_campaignid=12058006243&gbraid=0AAAAACoxfTKSp_IQgYDG2JeTZ3YVAxGBm&gclid=CjwKCAjwxfjGBhAUEiwAKWPwDtIptWGiC8rx7Kn4TYemjyHzFyu5X_KF9Isc76x46yeHu9mOjYAG-hoCjXoQAvD_BwE" target="_blank"><img src="../img/iconos/coderhouse-icon.png" alt="coder-icon" class="coder-icono"></a>
+        <a href="https://www.coderhouse.com/ar/?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gad_source=1&gad_campaignid=12058006243&gbraid=0AAAAACoxfTKSp_IQgYDG2JeTZ3YVAxGBm&gclid=CjwKCAjwxfjGBhAUEiwAKWPwDtIptWGiC8rx7Kn4TYemjyHzFyu5X_KF9Isc76x46yeHu9mOjYAG-hoCjXoQAvD_BwE"
+            target="_blank"><img src="../img/iconos/coderhouse-icon.png" alt="coder-icon" class="coder-icono"></a>
 
         <p class="derechos-footer">
-            © 2025 - Sitio de fans de Dread Mar I - Todos los derechos reservados - Desarrollado por Gian Franco Vitaller - No afiliado a Dread Mar I
+            © 2025 - Sitio de fans de Dread Mar I - Todos los derechos reservados - Desarrollado por Gian Franco
+            Vitaller - No afiliado a Dread Mar I
         </p>
 
-        <a href="https://www.instagram.com/vitagraphic.ok/" target="_blank"><img src="../img/iconos/vitagraphic.fullstack.png" alt="vita-logo" class="vita-logo"></a>
+        <a href="https://www.instagram.com/vitagraphic.ok/" target="_blank"><img
+                src="../img/iconos/vitagraphic.fullstack.png" alt="vita-logo" class="vita-logo"></a>
     </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
