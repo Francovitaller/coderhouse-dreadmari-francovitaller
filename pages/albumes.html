@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albumes</title>
+    <title>Dread Mar I - Albumes</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- hoja de estilos -->
+
     <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- favicon -->
+
+
     <link rel="shortcut icon" href="../img/iconos/Isologo-DMI.png" type="image/x-icon">
+
+    <!-- meta y keys -->
+    <meta name="author" content="Gian Franco Vitaller">
+
+    <meta name="description"
+        content="Explorá la discografía completa de Dread Mar I: todos sus álbumes, canciones, colaboraciones y lanzamientos que marcaron el reggae en español.">
+
+    <meta name="keywords" content="
+albumes Dread Mar I,
+discografía dread mar i,
+canciones dread mar i,
+reggae argentino,
+mejores álbumes dread mar i,
+nuevos lanzamientos dread mar i
+">
+    <!-- meta og para redes sociales -->
+
+    <meta property="og:title" content="Discografía de Dread Mar I">
+    <meta property="og:description"
+        content="Explorá todos los álbumes y canciones que marcaron la historia del reggae en español.">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="">
+
 </head>
+
 
 <!-- cuerpo de mi sitio web -->
 
@@ -17,10 +47,15 @@
 
 
     <!-- cabecera principal -->
-    
+
     <header class="site-header">
         <div class="header-inner">
             <a href="../index.html"><img src="../img/iconos/Isologo-DMI.png" alt="Dread Mar I" class="logo"></a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <a href="../index.html">Inicio</a>
                 <a href="./banda.html">Banda</a>
@@ -35,7 +70,7 @@
 
         <!-- primer section de la pagina -->
 
- <section class="albums-hero">
+        <section class="albums-hero">
             <div class="contenedor-principal">
                 <h2>Álbumes de Dread Mar-I</h2>
                 <p class="descripcion">
@@ -117,12 +152,16 @@
                 </article>
             </div>
 
-                    <!-- iframe spotify-->
+            <!-- iframe spotify-->
 
 
-<section class="iframes">
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0D9Rx6?utm_source=generator&theme=0" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</section>
+            <section class="iframes">
+                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0D9Rx6?utm_source=generator&theme=0"
+                    width="60%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </section>
 
     </main>
 
@@ -156,7 +195,22 @@
         <a href="https://www.instagram.com/vitagraphic.ok/" target="_blank"><img
                 src="../img/iconos/vitagraphic.fullstack.png" alt="vita-logo" class="vita-logo"></a>
     </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
+<!-- scrip de menu hamburguesa -->
+
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
+</script>
 
 </html>

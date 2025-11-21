@@ -1,58 +1,70 @@
 @use "variables" as v;
 
-footer{
-    background: v.$color-fondo ;
+footer {
+    background: v.$color-fondo;
     text-align: center;
     padding: 20px;
+
     display: grid;
-        grid-template-areas:
-            "logo"
-            "redes"
-            "coder"
-            "derechos"
-            "vita";
+    grid-template-areas:
+        "logo"
+        "redes"
+        "coder"
+        "derechos"
+        "vita";
     grid-template-columns: 1fr;
-        align-items: center;
+    align-items: center;
     justify-items: center;
     row-gap: 15px;
-    .logo-footer{
+
+    .logo-footer {
         grid-area: logo;
         width: v.$ancho-logo;
     }
+
     .redes-sociales-footer {
-    grid-area: redes;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    img{
-        width: 25px;
-        transition: transform 0.3s ease;
-    }:hover{
+        grid-area: redes;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+
+        img {
+            width: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
             transform: scale(1.3);
+        }
     }
-}
-.coder-icono {
-    grid-area: coder;
-    width: v.$ancho-logo;
-    padding: 10px 0 0 0;
-}
-.derechos-footer {
-    grid-area: derechos;
-    font-size: v.$fuente-small;
-    font-weight: 500;
-    text-align: center;
-    font-family: v.$fuente-principal;
-    color: v.$color-blanco;
-    margin: 0;
-    padding: 10px 0;
-}
-.vita-logo {
-    grid-area: vita;
-    width: v.$ancho-logo;
-    margin: 0;
-    padding: 0;
-}
+
+    .coder-icono {
+        grid-area: coder;
+        width: v.$ancho-logo;
+        padding: 10px 0 0 0;
+    }
+
+    .derechos-footer {
+        grid-area: derechos;
+        font-size: v.$fuente-small;
+        font-weight: 500;
+        text-align: center;
+        font-family: v.$fuente-principal;
+        color: v.$color-blanco;
+        margin: 0;
+        padding: 10px 0;
+        max-width: 90%;
+        line-height: 1.4;
+    }
+
+    .vita-logo {
+        grid-area: vita;
+        width: v.$ancho-logo;
+        margin: 0;
+        padding: 0;
+    }
+
 }

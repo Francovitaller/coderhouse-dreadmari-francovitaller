@@ -4,9 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shows</title>
+    <title>Dread Mar I - Shows</title>
+
+<!-- hoja de estilos -->
+
     <link rel="stylesheet" href="../styles/style.css">
+
+<!-- favicon -->
+
     <link rel="shortcut icon" href="../img/iconos/Isologo-DMI.png" type="image/x-icon">
+
+<!-- meta descripcion y keys -->
+
+    <meta name="author" content="Gian Franco Vitaller">
+    
+    <meta name="description" content="Enterate de los próximos shows de Dread Mar I: fechas, lugares, entradas y toda la información para vivir su música en vivo.">
+
+    <meta name="keywords" content="
+shows dread mar i,
+fechas dread mar i,
+entradas dread mar i,
+tour dread mar i,
+conciertos reggae,
+reggae en vivo
+">
+
 </head>
 
 <!-- cuerpo de mi sitio web -->
@@ -18,6 +40,12 @@
 
     <header class="site-header">
         <div class="header-inner">
+
+                        <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <a href="../index.html"><img src="../img/iconos/Isologo-DMI.png" alt="Dread Mar I" class="logo"></a>
             <nav class="main-nav">
                 <a href="../index.html">Inicio</a>
@@ -77,12 +105,10 @@
                 <a class="btn" href="#">Comprar Entradas</a>
             </div>
 
+        <!-- segundo section de la pagina -->
 
-
-
-
+        
         </section>
-
 
         <section class="tour-info">
             <h2 class="section-title">Sobre la Gira</h2>
@@ -143,5 +169,14 @@
                 src="../img/iconos/vitagraphic.fullstack.png" alt="vita-logo" class="vita-logo"></a>
     </footer>
 </body>
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
+</script>
 
 </html>

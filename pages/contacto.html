@@ -4,11 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Dread Mar I - Contacto</title>
+<!-- hoja de estilos -->
     <link rel="stylesheet" href="../styles/style.css">
+<!-- favicon -->
     <link rel="shortcut icon" href="../img/iconos/Isologo-DMI.png" type="image/x-icon">
+<!-- meta y keys -->
+
+    <meta name="description" content="Ponete en contacto para consultas, contrataciones, prensa o información oficial sobre Dread Mar I. Respuestas rápidas y profesionales.">
+
+    <meta name="keywords" content="
+contacto dread mar i,
+contrataciones dread mar i,
+manager dread mar i,
+prensa dread mar i,
+contacto oficial reggae
+">
+    <meta name="author" content="Gian Franco Vitaller">
+
+    <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Contacto | Dread Mar I">
+<meta property="og:description" content="Consultas, contrataciones, prensa y contacto oficial de Dread Mar I.">
+<meta property="og:url" content="https://tusitio.com/contacto">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tusitio.com/img/contacto.jpg">
+
+
 </head>
 
 <!-- cuerpo de mi sitio web -->
@@ -21,6 +42,13 @@
     <header class="site-header">
         <div class="header-inner">
             <a href="../index.html"><img src="../img/iconos/Isologo-DMI.png" alt="Dread Mar I" class="logo"></a>
+            
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
             <nav class="main-nav">
                 <a href="../index.html">Inicio</a>
                 <a href="./banda.html">Banda</a>
@@ -176,5 +204,14 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
+</script>
 
 </html>

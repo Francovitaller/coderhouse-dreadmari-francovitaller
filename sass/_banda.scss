@@ -8,10 +8,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         text-align: center;
         width: 100%;
-        padding: 0px 200px;
+        padding: 0 200px;
         gap: 35px;
 
         h3 {
@@ -31,10 +30,7 @@
             margin-bottom: 15px;
         }
     }
-
 }
-
-//section integrantes
 
 .integrantes-section {
     padding: 80px 25px;
@@ -50,18 +46,18 @@
         letter-spacing: 3px;
         text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
     }
-        .lead-banda {
-            text-align: center;
-            padding: 0px 200px 60px 200px;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.15em;
-            font-weight: 400;
-            color: v.$color-blanco;
-            line-height: 1.55;
-            margin-bottom: 15px;
-        }
+
+    .lead-banda {
+        text-align: center;
+        padding: 0 200px 60px 200px;
+        width: 100%;
+        font-size: 1.15em;
+        font-weight: 400;
+        color: v.$color-blanco;
+        line-height: 1.55;
+        margin-bottom: 15px;
+    }
+
     .integrantes-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -74,7 +70,6 @@
         text-align: center;
         border-radius: v.$radio-borde;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-
         transition: transform .3s ease, box-shadow .3s ease;
 
         &:hover {
@@ -86,11 +81,10 @@
             width: 100%;
             margin-bottom: 18px;
             border-radius: v.$radio-borde;
-
-            transition: transform .4s ease, filter .3s ease;
+            transition: transform .4s ease;
 
             &:hover {
-                transform: scale(1);
+                transform: scale(1.04);
             }
         }
 
@@ -100,7 +94,6 @@
             margin-top: 10px;
             margin-bottom: 6px;
             font-weight: 700;
-
         }
 
         p {
@@ -111,32 +104,48 @@
     }
 }
 
-
-//responsive
-
-@media (max-width: 992px) {
-    .banda .grid-banda {
-        flex-direction: column;
-        text-align: center;
-
-        .img-banda {
-            max-width: 70%;
-        }
-    }
-
-    .titulo-integrantes {
-        font-size: 2.8rem !important;
-    }
-}
-
-@media (max-width: 576px) {
+//celular
+@media (max-width: 600px) {
 
     .banda,
     .integrantes-section {
         padding: 45px 15px;
     }
 
+    .banda .grid-banda {
+        padding: 0 10px;
+        gap: 25px;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .lead-banda {
+            font-size: 1em;
+            padding: 0 5px;
+        }
+    }
+
+    .integrantes-section .lead-banda {
+        padding: 0 10px 40px 10px;
+        font-size: 1em;
+    }
+
     .titulo-integrantes {
         font-size: 2.4rem !important;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+
+    .card-integrante {
+        padding: 20px;
+
+        h4 {
+            font-size: 1.25em;
+        }
+
+        p {
+            font-size: 0.95em;
+        }
     }
 }

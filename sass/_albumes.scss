@@ -4,14 +4,14 @@
     background: url() center/cover no-repeat;
     padding: 80px 25px;
     text-align: center;
+
     h2 {
-        font-size: v.$fuente-h3 * 1.4;
+        font-size: calc(v.$fuente-h3 * 1.4);
         font-weight: 800;
         color: v.$color-principal;
         letter-spacing: 2px;
         text-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
         margin-bottom: 20px;
-
         animation: fadeDown .8s ease forwards;
     }
 
@@ -21,28 +21,23 @@
         color: v.$color-blanco;
         font-size: 1.15em;
         opacity: .9;
-
         animation: fadeUp .9s ease forwards;
     }
 }
-
-//grid albumes
-
 .albums-section {
-padding: 80px 25px;
-display: grid;
-grid-template-columns: 1fr;
-justify-items: center;
+    padding: 80px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 
     .albums-grid {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         gap: 28px;
         margin-bottom: 40px;
-
+        width: 100%;
+        max-width: 1500px;
     }
-
-//albumes
 
     .album-card {
         background: rgba(0, 0, 0, 0.9);
@@ -50,8 +45,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         padding: 20px;
         text-align: center;
         box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
-
-        transform: translateY(0);
         transition: transform .35s ease, box-shadow .35s ease;
 
         &:hover {
@@ -62,8 +55,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         img {
             width: 100%;
             border-radius: v.$radio-borde;
-
-            transition: transform .4s ease,;
+            transition: transform .4s ease;
 
             &:hover {
                 transform: scale(1.08);
@@ -82,24 +74,42 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             font-size: .95em;
         }
     }
-}
-
-//responsive tablet
-
-@media (max-width: 768px) {
-    .albums-hero h2 {
-        font-size: 2.2rem;
+    iframe{
+        border-radius: v.$radio-borde;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 450px;
     }
 }
-//responsive celu
-@media (max-width: 576px) {
+
+//responsive
+
+@media (max-width: 600px) {
 
     .albums-section,
     .albums-hero {
         padding: 45px 15px;
     }
 
+    .albums-section .albums-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
     .albums-hero h2 {
         font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+
+    .album-card {
+        padding: 18px;
+
+        h3 {
+            font-size: 1.15em;
+        }
+
+        .anio {
+            font-size: .9em;
+        }
     }
 }
