@@ -314,6 +314,49 @@ footer .vita-logo {
     font-size: 2rem !important;
   }
 }
+@media (min-width: 600px) and (max-width: 992px) {
+  .section-title {
+    padding: 50px 20px;
+  }
+  .section-title h2 {
+    font-size: calc(3rem - 10px);
+  }
+  .shows-list {
+    padding: 40px 25px;
+    gap: 22px;
+  }
+  .shows-list .show-card {
+    width: 45%;
+    padding: 22px;
+  }
+  .shows-list .show-card h3 {
+    font-size: 1.35em;
+  }
+  .shows-list .show-card p {
+    font-size: 1.05em;
+  }
+  .tour-info h2 {
+    font-size: calc(3rem - 10px);
+  }
+  .tour-info .lead {
+    padding: 0 80px;
+    font-size: 1.1em;
+  }
+  .galeria {
+    padding: 50px 25px;
+  }
+  .galeria .section-title {
+    font-size: calc(2.5rem - 8px);
+    padding: 40px 0;
+  }
+  .galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .galeria .grid-galeria img {
+    width: 95%;
+  }
+}
 .container {
   margin: 0 auto;
 }
@@ -575,6 +618,77 @@ img {
     width: 100%;
   }
 }
+@media (min-width: 600px) and (max-width: 992px) {
+  .hero {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .hero .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+    padding: 20px 0;
+  }
+  .hero h1 {
+    font-size: calc(3rem - 10px);
+  }
+  .hero .lead {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  .hero img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logos-container {
+    padding: 20px 0;
+  }
+  .logos-container .logos-slide {
+    gap: 60px;
+  }
+  .logos-container .logos-slide img {
+    height: 55px;
+  }
+  .hero2 {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .hero2 .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+  }
+  .hero2 h3 {
+    font-size: calc(2rem - 6px);
+  }
+  .hero2 .lead {
+    font-size: 1.1rem;
+  }
+  .hero2 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-jah {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .hero-jah .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+    padding: 0;
+  }
+  .hero-jah h3 {
+    font-size: calc(2rem - 6px);
+  }
+  .hero-jah .lead {
+    font-size: 1.1rem;
+  }
+  .hero-jah img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .formulario-contacto {
   background-color: #0c0c0c;
   padding: 60px 0px;
@@ -759,6 +873,90 @@ img {
     margin: 20px;
   }
 }
+@media (max-width: 992px) {
+  .formulario-contacto {
+    padding: 40px 0;
+  }
+  .formulario-contacto .contacto-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+  .formulario-contacto .contacto-grid .titulocontacto {
+    font-size: calc(2.5rem - 6px);
+  }
+  .formulario-contacto .contacto-grid .text {
+    font-size: calc(1rem + 1px);
+    padding: 0 20px;
+  }
+  .contacto-form {
+    max-width: 500px;
+    padding: 30px;
+    gap: 14px;
+  }
+  .contacto-form label {
+    font-size: 0.95rem;
+  }
+  .contacto-form input,
+  .contacto-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+  .contacto-motivos {
+    padding: 50px 20px;
+  }
+  .contacto-motivos .tituloporque {
+    font-size: calc(2.5rem - 4px);
+    margin: 30px;
+  }
+  .contacto-motivos .motivos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 22px;
+  }
+  .contacto-motivos .motivos-grid .motivo-card {
+    padding: 20px;
+  }
+  .contacto-motivos .motivos-grid .motivo-card img {
+    width: 55px;
+  }
+  .contacto-motivos .motivos-grid .motivo-card h3 {
+    font-size: 1.2rem;
+  }
+  .contacto-motivos .motivos-grid .motivo-card p {
+    font-size: 0.9rem;
+  }
+  .contacto-management {
+    padding: 50px 20px;
+  }
+  .contacto-management .management-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .contacto-management .management-grid .titulomapa {
+    font-size: calc(2rem - 4px);
+  }
+  .contacto-management .management-grid .lista-management li {
+    font-size: 0.95rem;
+  }
+  .contacto-management .management-grid .mapa {
+    height: 320px;
+  }
+}
+.contacto-final {
+  height: auto;
+  padding: 40px 20px;
+}
+.contacto-final h2 {
+  font-size: calc(2rem - 4px);
+}
+.contacto-final .lead {
+  font-size: 1.15rem;
+  max-width: 600px;
+}
+.contacto-final .alert {
+  font-size: 0.95rem;
+}
+
 .albums-hero {
   background: url() center/cover no-repeat;
   padding: 80px 25px;
@@ -852,6 +1050,42 @@ img {
   }
   .album-card .anio {
     font-size: 0.9em;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .albums-hero {
+    padding: 70px 30px;
+  }
+  .albums-hero h2 {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+  }
+  .albums-hero .descripcion {
+    font-size: 1.1em;
+    max-width: 700px;
+  }
+  .albums-section {
+    padding: 70px 30px;
+  }
+  .albums-section .albums-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+  }
+  .albums-section .album-card {
+    padding: 20px;
+  }
+  .albums-section .album-card h3 {
+    font-size: 1.25em;
+  }
+  .albums-section .album-card .anio {
+    font-size: 1em;
+  }
+  .albums-section .album-card img {
+    width: 100%;
+  }
+  .albums-section iframe {
+    height: 380px;
   }
 }
 .banda {
@@ -977,6 +1211,51 @@ img {
   }
   .card-integrante p {
     font-size: 0.95em;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .banda {
+    padding: 70px 35px;
+  }
+  .banda .grid-banda {
+    padding: 0 80px;
+    gap: 30px;
+  }
+  .banda .grid-banda h3 {
+    font-size: calc(3rem - 10px);
+  }
+  .banda .grid-banda .lead-banda {
+    font-size: 1.1em;
+    padding: 0 20px;
+  }
+  .integrantes-section {
+    padding: 70px 35px;
+  }
+  .integrantes-section .titulo-integrantes {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  .integrantes-section .lead-banda {
+    padding: 0 80px 50px 80px;
+    font-size: 1.1em;
+  }
+  .integrantes-section .integrantes-grid {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .integrantes-section .card-integrante {
+    padding: 24px;
+  }
+  .integrantes-section .card-integrante h4 {
+    font-size: 1.35em;
+  }
+  .integrantes-section .card-integrante p {
+    font-size: 1.05em;
+  }
+  .integrantes-section .card-integrante .integrante-img {
+    width: 90%;
+    margin: 0 auto 18px auto;
   }
 }
 

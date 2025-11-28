@@ -234,3 +234,109 @@
     }
 }
 }
+
+//responsive tablet
+
+@media (max-width: 992px) {
+    .formulario-contacto {
+        padding: 40px 0;
+
+        .contacto-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 25px;
+
+            .titulocontacto {
+                font-size: calc(v.$fuente-h2 - 6px);
+            }
+
+            .text {
+                font-size: calc(v.$fuente-base + 1px);
+                padding: 0 20px;
+            }
+        }
+    }
+    .contacto-form {
+        max-width: 500px;
+        padding: 30px;
+        gap: 14px;
+
+        label {
+            font-size: 0.95rem;
+        }
+
+        input,
+        textarea {
+            font-size: 0.95rem;
+            padding: 10px 12px;
+        }
+    }
+    .contacto-motivos {
+        padding: 50px 20px;
+
+        .tituloporque {
+            font-size: calc(v.$fuente-h2 - 4px);
+            margin: 30px;
+        }
+
+        .motivos-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 22px;
+
+            .motivo-card {
+                padding: 20px;
+
+                img {
+                    width: 55px;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .contacto-management {
+        padding: 50px 20px;
+
+        .management-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+
+            .titulomapa {
+                font-size: calc(v.$fuente-h3 - 4px);
+            }
+
+            .lista-management li {
+                font-size: 0.95rem;
+            }
+
+            .mapa {
+                height: 320px;
+            }
+        }
+    }
+
+}
+    .contacto-final {
+        height: auto;
+        padding: 40px 20px;
+
+        h2 {
+            font-size: calc(v.$fuente-h3 - 4px);
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            max-width: 600px;
+        }
+
+        .alert {
+            font-size: 0.95rem;
+        }
+    }
+

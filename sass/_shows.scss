@@ -134,7 +134,7 @@
 }
 
 
-//celular
+// responsive celular
 @media (max-width: 600px) {
 
     .section-title {
@@ -165,5 +165,65 @@
 
     .galeria .section-title {
         font-size: 2rem !important;
+    }
+}
+
+
+// responsive tablet
+
+
+@media (min-width: 600px) and (max-width: 992px) {
+
+    .section-title {
+        padding: 50px 20px;
+
+        h2 {
+            font-size: calc(v.$fuente-h1 - 10px);
+        }
+    }
+
+    .shows-list {
+        padding: 40px 25px;
+        gap: 22px;
+
+        .show-card {
+            width: 45%;
+            padding: 22px;
+
+            h3 {
+                font-size: 1.35em;
+            }
+
+            p {
+                font-size: 1.05em;
+            }
+        }
+    }
+    .tour-info {
+        h2 {
+            font-size: calc(v.$fuente-h1 - 10px);
+        }
+
+        .lead {
+            padding: 0 80px;
+            font-size: 1.1em;
+        }
+    }
+    .galeria {
+        padding: 50px 25px;
+
+        .section-title {
+            font-size: calc(v.$fuente-h2 - 8px);
+            padding: 40px 0;
+        }
+
+        .grid-galeria {
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 24px;
+
+            img {
+                width: 95%;
+            }
+        }
     }
 }

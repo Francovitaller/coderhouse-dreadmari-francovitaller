@@ -98,7 +98,9 @@
     }
 }
 
-//celular
+//celular responsive
+
+
 @media (max-width: 600px) {
 
     .banda,
@@ -140,6 +142,66 @@
 
         p {
             font-size: 0.95em;
+        }
+    }
+}
+
+// responsive tablet
+
+@media (min-width: 600px) and (max-width: 992px) {
+
+    .banda {
+        padding: 70px 35px;
+
+        .grid-banda {
+            padding: 0 80px;
+            gap: 30px;
+
+            h3 {
+                font-size: calc(v.$fuente-h1 - 10px);
+            }
+
+            .lead-banda {
+                font-size: 1.1em;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .integrantes-section {
+        padding: 70px 35px;
+
+        .titulo-integrantes {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .lead-banda {
+            padding: 0 80px 50px 80px;
+            font-size: 1.1em;
+        }
+
+        .integrantes-grid {
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .card-integrante {
+            padding: 24px;
+
+            h4 {
+                font-size: 1.35em;
+            }
+
+            p {
+                font-size: 1.05em;
+            }
+
+            .integrante-img {
+                width: 90%;
+                margin: 0 auto 18px auto;
+            }
         }
     }
 }
