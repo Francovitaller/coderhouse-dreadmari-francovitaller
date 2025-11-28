@@ -11,6 +11,14 @@ body {
   box-sizing: border-box;
 }
 
+.integrantes-section .card-integrante {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .site-header {
   width: 100%;
   background: rgba(0, 0, 0, 0.65);
@@ -608,7 +616,8 @@ img {
   font-weight: 600;
   font-size: 1rem;
 }
-.contacto-form input, .contacto-form textarea {
+.contacto-form input,
+.contacto-form textarea {
   padding: 12px 14px;
   border-radius: 12px;
   border: none;
@@ -725,6 +734,10 @@ img {
   font-size: 1.3rem;
   max-width: 700px;
   margin: 0 auto;
+  padding: 10px;
+}
+.contacto-final .alert {
+  margin: 20px;
 }
 
 @media (max-width: 600px) {
@@ -737,6 +750,14 @@ img {
   .contacto-management .management-grid {
     grid-template-columns: 1fr;
   }
+  .contacto-final {
+    width: 100%;
+    height: 40vh;
+  }
+  .contacto-final .alert {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
 }
 .albums-hero {
   background: url() center/cover no-repeat;
@@ -744,13 +765,12 @@ img {
   text-align: center;
 }
 .albums-hero h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #f1c40f;
   letter-spacing: 2px;
   text-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
-  animation: fadeDown 0.8s ease forwards;
 }
 .albums-hero .descripcion {
   max-width: 800px;
@@ -758,18 +778,17 @@ img {
   color: #ffffff;
   font-size: 1.15em;
   opacity: 0.9;
-  animation: fadeUp 0.9s ease forwards;
 }
 
 .albums-section {
   padding: 80px 25px;
-  display: grid;
-  grid-template-columns: 1fr;
   justify-items: center;
 }
 .albums-section .albums-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
   gap: 28px;
   margin-bottom: 40px;
   width: 100%;
@@ -841,9 +860,10 @@ img {
 }
 .banda .grid-banda {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0 200px;
   gap: 35px;
@@ -891,15 +911,12 @@ img {
 .integrantes-section .integrantes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-content: center;
+  align-items: center;
   gap: 25px;
 }
 .integrantes-section .card-integrante {
-  background: rgba(0, 0, 0, 0.9);
   padding: 26px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .integrantes-section .card-integrante:hover {
   transform: translateY(-10px) scale(1.03);

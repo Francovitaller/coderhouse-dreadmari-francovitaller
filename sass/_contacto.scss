@@ -4,9 +4,10 @@
 //hero contacto
 
 .formulario-contacto {
-background-color: #0c0c0c;
+    background-color: #0c0c0c;
     padding: 60px 0px;
     width: 100%;
+
     .contacto-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -49,7 +50,8 @@ background-color: #0c0c0c;
         font-size: 1rem;
     }
 
-    input,textarea {
+    input,
+    textarea {
         padding: 12px 14px;
         border-radius: v.$radio-borde;
         border: none;
@@ -70,6 +72,7 @@ background-color: #0c0c0c;
     transition: 0.25s ease-in-out;
     color: black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
     &:hover {
         transform: scale(1.05);
         box-shadow:
@@ -144,7 +147,7 @@ background-color: #0c0c0c;
         text-align: center;
         align-items: center;
 
-        .titulomapa{
+        .titulomapa {
             font-size: v.$fuente-h3;
             color: v.$color-principal;
             margin-bottom: 12px;
@@ -177,14 +180,14 @@ background-color: #0c0c0c;
 
 
 .contacto-final {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-background-color: #0c0c0c;
-width: 100%;
-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 20vh;
 
     h2 {
         font-size: v.$fuente-h3;
@@ -198,6 +201,11 @@ height: 20vh;
         font-size: 1.3rem;
         max-width: 700px;
         margin: 0 auto;
+        padding: 10px;
+    }
+
+    .alert {
+        margin: 20px;
     }
 }
 
@@ -215,5 +223,14 @@ height: 20vh;
     .contacto-management .management-grid {
         grid-template-columns: 1fr;
     }
-}
 
+.contacto-final {
+    width: 100%;
+    height: 40vh;
+
+    .alert {
+        font-size: 0.9rem;
+        margin: 20px;
+    }
+}
+}
